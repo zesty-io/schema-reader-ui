@@ -1,3 +1,15 @@
+
+var starterExamplesURL = "https://raw.githubusercontent.com/zesty-io/schema-reader-ui/master/assets/examples/starters.json"
+
+$.get(starterExamplesURL, function(data){
+	var json = JSON.parse(data)
+	$.each(json.examples,function(key,value){
+		console.log(value)
+	})
+
+})
+
+
 var parseEndpoint = "https://us-central1-zesty-dev.cloudfunctions.net/schemaReader"
 
 var settings = {
@@ -17,7 +29,6 @@ $("#testInput").on('change',function(){
 	settings.data = $this.val()
 
 	$.ajax(settings).done(function(data){
-		console.log(data)
 		$( "#testOutput" ).html( JSON.stringify(data) );
 	})
 })

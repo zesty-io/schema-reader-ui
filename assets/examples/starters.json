@@ -1,5 +1,5 @@
 {
-	"Examples": [
+	"examples": [
 		{
 			"name": "Material UI [blueprint]",
 			"url" : "https://raw.githubusercontent.com/zesty-io/plate-material-ui/master/blueprint.yaml"
