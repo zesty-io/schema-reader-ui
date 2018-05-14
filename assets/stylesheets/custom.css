@@ -1,0 +1,6 @@
+.panel-content.example-content{
+	display: none;
+}
+.panel-content.example-content.is-active{
+	display: block;
+}
