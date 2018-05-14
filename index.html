@@ -2,6 +2,9 @@
 <head>
 	<title>Zesty.io Schema Reader</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" type="text/css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+
 </head>
 <body>
 	<section class="hero">
@@ -16,23 +19,60 @@
     </div>
   </div>
 </section>
+<div class="container">
 	<div class="columns">
 	  <div class="column">
-	    <textarea name="test" id="testInput">Input here</textarea>
+	    <textarea name="test" class="textarea" row="60" id="testInput" placeholder="Write or Paste your YAML Here"></textarea>
+			<br>
+			<nav class="panel">
+			  <p class="panel-heading">
+			    Load Examples
+			  </p>
+			  <div class="panel-block">
+			    <p class="control has-icons-left">
+			      <input class="input is-small" type="text" placeholder="search">
+			      <span class="icon is-small is-left">
+			        <i class="fas fa-search" aria-hidden="true"></i>
+			      </span>
+			    </p>
+			  </div>
+			  <p class="panel-tabs">
+			    <a class="is-active">all</a>
+			    <a>blueprints</a>
+					<a>modules</a>
+					<a>collections</a>
+			    <a>plugins</a>
+			  </p>
+			  <a class="panel-block is-active" href="https://raw.githubusercontent.com/zesty-io/plate-material-ui/master/blueprint.yaml">
+			    <span class="panel-icon">
+			      <i class="fas fa-book" aria-hidden="true"></i>
+			    </span>
+			    Material UI Blueprint
+			  </a>
+			  <a class="panel-block" href="https://raw.githubusercontent.com/zesty-io/plate-material-ui/master/content/homepage-item.yaml">
+			    <span class="panel-icon">
+			      <i class="fas fa-book" aria-hidden="true"></i>
+			    </span>
+			    Material UI Data
+			  </a>
+
+			</nav>
+
 	  </div>
 	  <div class="column">
-	    <div class="output" id="testOutput">
+	    <div class="box" id="testOutput">
 			</div>
 	  </div>
 
 	</div>
+</div>
 
 
-		<script
-		  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-		  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-		  crossorigin="anonymous"></script>
+<script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
 
-		<script src="assets/javascript/main.js" type="text/text/javascript"></script>
+		<script src="assets/javascript/main.js" type="text/javascript"></script>
 </body>
 </html>
