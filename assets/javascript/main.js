@@ -1,3 +1,9 @@
+// setup the YAML editor
+var editor = ace.edit("testInput");
+editor.setTheme("ace/theme/xcode");
+editor.session.setMode("ace/mode/yaml");
+
+
 
 var $testInput = $("#testInput")
 var examplesURL = "https://raw.githubusercontent.com/zesty-io/schema-reader-ui/master/assets/examples/examples.json"
@@ -54,6 +60,8 @@ $(document).on('click',".panel-block",function(e){
 	$.get($this.attr('href')).done(function(data){
 		$testInput.val('')
 		$testInput.val(data)
+		editor.setValue("");
+		editor.setValue(data);
 		parseYAML(data)
 	})
 })
@@ -74,7 +82,14 @@ var settings = {
 }
 
 $("#testInput").on('change',function(){
-	parseYAML($(this).val())
+	parseYAML(editor.getValue())
+})
+
+$("#submit").on('click',function(e){
+	console.log('asdasd')
+	console.log(editor.getValue())
+	e.preventDefault()
+	parseYAML(editor.getValue())
 })
 
 function parseYAML(yaml){

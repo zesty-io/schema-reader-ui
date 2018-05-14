@@ -4,3 +4,8 @@
 .panel-content.example-content.is-active{
 	display: block;
 }
+
+#testInput {
+	width: 100%;
+	height: 300px;
+}
