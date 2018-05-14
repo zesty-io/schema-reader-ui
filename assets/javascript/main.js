@@ -24,7 +24,7 @@ $.get(examplesURL, function(data){
 		$.get(value.url,function(data2){
 
 			$.each(JSON.parse(data2).examples,function(key,value){
-				var html = `<a class="panel-block" href="${value.url}">
+				var html = `<a class="panel-block panel-block-example" href="${value.url}">
 					<span class="panel-icon">
 						<i class="fas fa-book" aria-hidden="true"></i>
 					</span>
@@ -52,7 +52,7 @@ $(document).on('click',"a.exampleTab",function(e){
 	$this.addClass('is-active')
 })
 // exmaple
-$(document).on('click',".panel-block",function(e){
+$(document).on('click',".panel-block-example",function(e){
 	e.preventDefault()
 	var $this = $(this)
 	$('.panel-block').removeClass('is-active')
