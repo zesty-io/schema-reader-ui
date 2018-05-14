@@ -10,7 +10,6 @@
 	height: 500px;
 }
 
-#testOutput{
-	 overflow: scroll;
-	 white-space: pre-wrap;
+#testOutput > div{
+	margin-bottom: 20px;
 }

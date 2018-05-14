@@ -85,9 +85,32 @@ $("#submit").on('click',function(e){
 	parseYAML(editor.getValue())
 })
 
+
 function parseYAML(yaml){
 	settings.data = yaml
 	$.ajax(settings).done(function(data){
-		$( "#testOutput" ).html( JSON.stringify(data) );
+			if(data.valid == true){
+				var html = `<div class="notification is-success">
+					<button class="delete"></button>
+						<h2><strong>Valid</strong></h2>
+						<ul>
+							<li><strong>Author:</strong> ${data.author}</li>
+						</ul>
+					</div>`
+			} else {
+				var html = `<div class="notification is-danger">
+				  <button class="delete"></button>
+						<h3><strong>Error:</strong> ${data.name}</h3>
+						<br>
+						<p>${data.message}</p>
+					</div>`
+			}
+			$( "#testOutput" ).html(html)
+
 	})
 }
+
+
+$(document).on('click','.notification .delete', function(){
+	$(this).parent().remove();
+})
