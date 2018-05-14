@@ -39,10 +39,9 @@ $.get(examplesURL, function(data){
 
 })
 
-// example ui controllers
-// nav
+// example UI Controls
+// panel nav
 $(document).on('click',"a.exampleTab",function(e){
-
 	e.preventDefault()
 	var $this = $(this)
 	var name = $this.attr('data-tab')
@@ -51,7 +50,7 @@ $(document).on('click',"a.exampleTab",function(e){
 	$(`#${name}`).addClass('is-active')
 	$this.addClass('is-active')
 })
-// exmaple
+// exmaple panel content
 $(document).on('click',".panel-block-example",function(e){
 	e.preventDefault()
 	var $this = $(this)

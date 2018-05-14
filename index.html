@@ -21,13 +21,13 @@
 </section>
 <div class="container">
 	<div class="columns">
-	  <div class="column">
+	  <div class="column is-two-thirds">
 			<nav class="panel">
 			  <p class="panel-heading">
 			   YAML Schema Editor
 			  </p>
 
-	    		<div class="panel-block" id="testInput"></div>
+	    	<div class="panel-block" id="testInput"></div>
 
 				<div class="panel-block">
 				 <button id="submit" class="button is-link is-outlined is-fullwidth">
@@ -36,27 +36,26 @@
 			 </div>
 			</nav>
 
-
+	  </div>
+	  <div class="column is-one-thirds">
+	    <div class="box" id="testOutput"></div>
 			<nav id="examplePanel" class="panel">
-			  <p class="panel-heading">
-			    YAML Examples <small class="as-text-grey">click to load</small>
-			  </p>
-			  <div class="panel-block">
-			    <p class="control has-icons-left">
-			      <input class="input is-small" type="text" placeholder="search">
-			      <span class="icon is-small is-left">
-			        <i class="fas fa-search" aria-hidden="true"></i>
-			      </span>
-			    </p>
-			  </div>
-			  <p class="panel-tabs" id="exampleTabs"></p>
+				<p class="panel-heading">
+					YAML Examples <small class="as-text-grey">click to load</small>
+				</p>
+				<div class="panel-block">
+					<p class="control has-icons-left">
+						<input class="input is-small" type="text" placeholder="search">
+						<span class="icon is-small is-left">
+							<i class="fas fa-search" aria-hidden="true"></i>
+						</span>
+					</p>
+				</div>
+				<p class="panel-tabs" id="exampleTabs"></p>
 
 			</nav>
 
-	  </div>
-	  <div class="column">
-	    <div class="box" id="testOutput">
-			</div>
+
 	  </div>
 
 	</div>
