@@ -67,7 +67,7 @@ $(document).on('click',".panel-block",function(e){
 })
 
 
-
+// testing against the yaml scema reader endpoint
 var parseEndpoint = "https://us-central1-zesty-dev.cloudfunctions.net/schemaReader"
 
 var settings = {
@@ -81,13 +81,7 @@ var settings = {
   }
 }
 
-$("#testInput").on('change',function(){
-	parseYAML(editor.getValue())
-})
-
 $("#submit").on('click',function(e){
-	console.log('asdasd')
-	console.log(editor.getValue())
 	e.preventDefault()
 	parseYAML(editor.getValue())
 })
