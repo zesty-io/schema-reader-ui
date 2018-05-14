@@ -24,9 +24,9 @@
 	  <div class="column">
 	    <textarea name="test" class="textarea" row="60" id="testInput" placeholder="Write or Paste your YAML Here"></textarea>
 			<br>
-			<nav class="panel">
+			<nav id="examplePanel" class="panel">
 			  <p class="panel-heading">
-			    Load Examples
+			    YAML Examples <small class="as-text-grey">click to load</small>
 			  </p>
 			  <div class="panel-block">
 			    <p class="control has-icons-left">
@@ -36,21 +36,8 @@
 			      </span>
 			    </p>
 			  </div>
-			  <p class="panel-tabs">
-			    <a class="is-active">starters</a>
-			    <a>blueprints</a>
-					<a>modules</a>
-					<a>collections</a>
-			    <a>plugins</a>
-			  </p>
-				<div class="panel-content is-active"  id="starters">
-				</div>
-				<div class="panel-content is-active"  id="blueprints">
-				</div>
-				<div class="panel-content is-active"  id="modules">
-				</div>
-				<div class="panel-content is-active"  id="plugins">
-				</div>
+			  <p class="panel-tabs" id="exampleTabs"></p>
+
 			</nav>
 
 	  </div>
