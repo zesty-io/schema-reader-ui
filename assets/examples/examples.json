@@ -1,0 +1,12 @@
+{
+	"tabs": [
+		{
+			"name": "starters",
+			"url" : "https://raw.githubusercontent.com/zesty-io/schema-reader-ui/master/assets/examples/starters.json"
+		},
+		{
+			"name": "blueprints",
+			"url" : "https://raw.githubusercontent.com/zesty-io/schema-reader-ui/master/assets/examples/blueprints.json"
+		}
+	]
+}
