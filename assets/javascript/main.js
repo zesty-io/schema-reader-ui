@@ -92,18 +92,27 @@ function parseYAML(yaml){
 			if(data.valid == true){
 				var html = `<div class="notification is-success">
 					<button class="delete"></button>
-						<h2><strong>Valid</strong></h2>
+						<h2><strong>Valid ${data.schema.Type} schema file</strong></h2><br>
 						<ul>
+							<li><strong>Name:</strong> ${data.schema.Name}</li>
 							<li><strong>Author:</strong> ${data.author}</li>
+
 						</ul>
 					</div>`
 			} else {
-				var html = `<div class="notification is-danger">
-				  <button class="delete"></button>
-						<h3><strong>Error:</strong> ${data.name}</h3>
-						<br>
-						<p>${data.message}</p>
-					</div>`
+				// there is an error, loop through the,
+				var html = '<div class="notification is-danger"><button class="delete"></button>'
+				$.each(data.errors,function(key,value){
+					console.log(value)
+					// move cursor position
+					if( value.hasOwnProperty("position") ) {
+						editor.selection.moveTo(value.position.line, value.position.column)
+					}
+					// append error message
+					html += `<h3><strong>Error:</strong> ${value.type}</h3>
+									<br><p>${value.message}</p>`
+				})
+				html += `</div>`
 			}
 			$( "#testOutput" ).html(html)
 
