@@ -94,7 +94,7 @@ function parseYAML(yaml){
 					<button class="delete"></button>
 						<h2><strong>Valid ${data.schema.type} schema file</strong></h2><br>
 						<ul>
-							<li><strong>Name:</strong> ${data.schema.Name}</li>
+							<li><strong>Name:</strong> ${data.schema.name}</li>
 							<li><strong>Author:</strong> ${data.author}</li>
 
 						</ul>
