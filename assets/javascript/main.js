@@ -92,7 +92,7 @@ function parseYAML(yaml){
 			if(data.valid == true){
 				var html = `<div class="notification is-success">
 					<button class="delete"></button>
-						<h2><strong>Valid ${data.schema.Type} schema file</strong></h2><br>
+						<h2><strong>Valid ${data.schema.type} schema file</strong></h2><br>
 						<ul>
 							<li><strong>Name:</strong> ${data.schema.Name}</li>
 							<li><strong>Author:</strong> ${data.author}</li>
