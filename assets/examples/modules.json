@@ -3,6 +3,10 @@
 		{
 			"name": "About Page",
 			"url" : "https://raw.githubusercontent.com/zesty-io/recipes/master/about-page/module.yaml"
+		},
+		{
+			"name": "Home Page",
+			"url": "https://raw.githubusercontent.com/zesty-io/recipes/master/about-page/module.yaml"
 		}
 	]
 }
