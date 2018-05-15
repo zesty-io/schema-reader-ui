@@ -1,9 +1,12 @@
 // setup the YAML editor
-var editor = ace.edit("testInput");
-editor.setTheme("ace/theme/xcode");
-editor.session.setMode("ace/mode/yaml");
-
-
+var editor = ace.edit("testInput")
+editor.setTheme("ace/theme/xcode")
+editor.session.setMode("ace/mode/yaml")
+editor.session.setOptions({ tabSize: 2, useSoftTabs: true });
+//editor.session.setUseSoftTabs(true)
+editor.setShowInvisibles(true)
+//editor.session.setTabSize(1)
+console.log(editor.session.getUseSoftTabs())
 
 var $testInput = $("#testInput")
 var examplesURL = "https://raw.githubusercontent.com/zesty-io/schema-reader-ui/master/assets/examples/examples.json"
