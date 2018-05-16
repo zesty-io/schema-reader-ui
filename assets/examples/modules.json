@@ -6,7 +6,7 @@
 		},
 		{
 			"name": "Home Page",
-			"url": "https://raw.githubusercontent.com/zesty-io/recipes/master/about-page/module.yaml"
+			"url": "https://raw.githubusercontent.com/zesty-io/recipes/master/blog/blog-module.yaml"
 		}
 	]
 }
