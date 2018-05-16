@@ -15,6 +15,10 @@
 		{
 			"name": "content",
 			"url" : "https://raw.githubusercontent.com/zesty-io/schema-reader-ui/master/assets/examples/content.json"
+		},
+		{
+			"name": "style-variables",
+			"url" : "https://raw.githubusercontent.com/zesty-io/schema-reader-ui/master/assets/examples/style-variables.json"
 		}
 	]
 }
