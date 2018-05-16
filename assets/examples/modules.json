@@ -7,6 +7,10 @@
 		{
 			"name": "Blog Module",
 			"url": "https://raw.githubusercontent.com/zesty-io/module-blog/master/module.yaml"
+		},
+		{
+			"name": "FAQ Module",
+			"url": "https://raw.githubusercontent.com/zesty-io/module-blog/master/module.yaml"
 		}
 	]
 }
