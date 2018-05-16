@@ -6,7 +6,7 @@
 		},
 		{
 			"name": "Blog Module",
-			"url": "https://raw.githubusercontent.com/zesty-io/recipes/master/blog/blog-module.yaml"
+			"url": "https://raw.githubusercontent.com/zesty-io/module-blog/master/module.yaml"
 		}
 	]
 }
