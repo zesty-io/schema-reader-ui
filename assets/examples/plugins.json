@@ -6,11 +6,7 @@
 		},
 		{
 			"name": "Blog Plugin",
-			"url": "https://raw.githubusercontent.com/zesty-io/module-blog/master/module.yaml"
-		},
-		{
-			"name": "FAQ Plugin",
-			"url": "https://raw.githubusercontent.com/zesty-io/module-blog/master/module.yaml"
+			"url": "https://raw.githubusercontent.com/zesty-io/plugin-blog/master/plugin.yaml"
 		}
 	]
 }
