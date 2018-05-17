@@ -9,8 +9,8 @@
 			"url" : "https://raw.githubusercontent.com/zesty-io/schema-reader-ui/master/assets/examples/blueprints.json"
 		},
 		{
-			"name": "modules",
-			"url" : "https://raw.githubusercontent.com/zesty-io/schema-reader-ui/master/assets/examples/modules.json"
+			"name": "plugins",
+			"url" : "https://raw.githubusercontent.com/zesty-io/schema-reader-ui/master/assets/examples/plugins.json"
 		},
 		{
 			"name": "content",

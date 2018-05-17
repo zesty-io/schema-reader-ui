@@ -1,15 +1,15 @@
 {
 	"examples": [
 		{
-			"name": "Simple About Page",
+			"name": "Simple About Page Plugin",
 			"url" : "https://raw.githubusercontent.com/zesty-io/recipes/master/about-page/module.yaml"
 		},
 		{
-			"name": "Blog Module",
+			"name": "Blog Plugin",
 			"url": "https://raw.githubusercontent.com/zesty-io/module-blog/master/module.yaml"
 		},
 		{
-			"name": "FAQ Module",
+			"name": "FAQ Plugin",
 			"url": "https://raw.githubusercontent.com/zesty-io/module-blog/master/module.yaml"
 		}
 	]

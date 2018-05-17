@@ -2,11 +2,11 @@
 	"examples": [
 		{
 			"name": "Material UI Homepage [content]",
-			"url" : "https://raw.githubusercontent.com/zesty-io/plate-material-ui/master/content/homepage-item.yaml"
+			"url" : "https://raw.githubusercontent.com/zesty-io/plate-material-ui/master/content/homepage-contents.yaml"
 		},
 		{
 			"name": "Material UI Clippings [content]",
-			"url" : "https://raw.githubusercontent.com/zesty-io/plate-material-ui/master/content/clipping-items.yaml"
+			"url" : "https://raw.githubusercontent.com/zesty-io/plate-material-ui/master/content/clippings-contents.yaml"
 		}
 	]
 }
