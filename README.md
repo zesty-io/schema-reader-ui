@@ -6,7 +6,7 @@ Visit the url: https://zesty-io.github.io/schema-reader-ui/
 
 ### Examples
 
-Examples dynamically load from json files in the Examples folder. The master file is [examples.json](examples/examples.json). This file points to other files that dynamically load the examples panel, each example points to a remote Zesty.io YAML Schema files.
+Examples dynamically load from json files in the Examples folder. The master file is [examples.json](assets/examples/examples.json). This file points to other files that dynamically load the examples panel, each example points to a remote Zesty.io YAML Schema files.
 
 We encourage other to make pull requests against examples. Add your own and help other devs.
 
