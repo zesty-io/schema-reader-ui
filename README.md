@@ -10,9 +10,9 @@ Examples dynamically load from json files in the Examples folder. The master fil
 
 We encourage other to make pull requests against examples. Add your own and help other devs.
 
-### Project
+### Project Goals
 
-The goal is to keep this very lightweight, no build process with few dependencies.
+The goal is to create an interactive tool for developers to test their YAML schema files. It's important to keep this repo very lightweight, no build process and few dependencies.
 
 ### Dependencies
 * ACE Editor with YAML mode and XCODE theme
