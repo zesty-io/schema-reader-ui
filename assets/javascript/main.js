@@ -13,7 +13,7 @@ var examplesURL = "https://raw.githubusercontent.com/zesty-io/schema-reader-ui/m
 
 
 // build the dynamic content for examples
-$.get(examplesURL, function(data){
+$.get(examplesURL  + '?x=' + ('' + Date.now()), function(data){
 	var i = 0
 	$.each(JSON.parse(data).tabs,function(key,value){
 		var $name = value.name
@@ -24,7 +24,7 @@ $.get(examplesURL, function(data){
 		$('#examplePanel').append(panel)
 		i++
 
-		$.get(value.url,function(data2){
+		$.get(value.url + '?x=' + ('' + Date.now()),function(data2){
 
 			$.each(JSON.parse(data2).examples,function(key,value){
 				var html = `<a class="panel-block panel-block-example" href="${value.url}">
